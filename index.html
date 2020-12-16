@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python Documentation</title>
+</head>
+
+<body>
+    <main id="main-doc">
+        <nav id="nav-bar">
+            <header>Python Documentation</header>
+            <div id="link-div">
+                <ul id="links">
+                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li><a href="#Python_vs_other_language" class="nav-link">Python vs other language</a></li>
+                    <li><a href="#What_should_you_know" class="nav-link">What should you know!</a></li>
+                    <li><a href="#get_started" class="nav-link">Get Started With Python</a></li>
+                    <li><a href="#variables" class="nav-link">Variables</a></li>
+                    <li><a href="#data_types" class="nav-link">Data Types</a></li>
+                    <li><a href="#conditional" class="nav-link">Conditional</a></li>
+                    <li><a href="#indentation" class="nav-link">Indentation</a></li>
+                    <li><a href="#iteration" class="nav-link">Iteration</a></li>
+                    <li><a href="#while_loop" class="nav-link">While Loop</a></li>
+                    <li><a href="#for_loop" class="nav-link">For Loop</a></li>
+                    <li><a href="#function" class="nav-link">Function</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="info">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <p>
+                    Python is an interpreted, high-level and general-purpose programming language. Python's design
+                    philosophy emphasizes code readability with its notable use of significant whitespace. Its language
+                    constructs and object-oriented approach aim to help programmers write clear, logical code for small
+                    and
+                    large-scale projects.
+                </p>
+                <p>
+                    Python is dynamically typed and garbage-collected. It supports multiple programming paradigms,
+                    including
+                    structured (particularly, procedural), object-oriented, and functional programming. Python is often
+                    described as a "batteries included" language due to its comprehensive standard library.
+                </p>
+                <p>
+                    Python interpreters are supported for mainstream operating systems and available for a few more (and
+                    in
+                    the past supported many more). A global community of programmers develops and maintains CPython, a
+                    free
+                    and open-source reference implementation. A non-profit organization, the Python Software Foundation,
+                    manages and directs resources for Python and CPython development. It currently ties with Java as the
+                    second most popular programming language in the world.
+                </p>
+            </section>
+            <section class="main-section" id="Python_vs_other_language">
+                <header>Python vs other language</header>
+                <p>
+                    Why is the python most popular language? Here's why:
+                <ul>
+                    <li>Easy to learn,</li>
+                    <li>Has large library of standards and toolkits,</li>
+                    <li>Has variety of applications</li>
+                    <li>Is high on demand.</li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="What_should_you_know">
+                <header>What should you know!</header>
+                <p>
+                    The must thing you should know for learning includes:
+                <ul>
+                    <li>Setup for learning.</li>
+                    <li>A Passion for learning Python.</li>
+                    <li>Ton of creativity for building projects.</li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="get_started">
+                <header>Get Started With Python</header>
+                <p>
+                    Trend of learning Language Starts from Hello World. Here's how can we write it:<br>
+                    <code>
+                    print("Hello World")
+                </code><br>
+                    This simple code can be copied and can be runned in python interpreter. Here print displays the ouput.
+                    Output of above code is:<br>
+                    <code>Hello World</code>
+                </p>
+            </section>
+            <section class="main-section" id="variables">
+                <header>Variables</header>
+                <p>
+                    Variable are a container to store a value. These value can be anything, from numbers, to texts or
+                    entire
+                    functions.
+                </p>
+                <p>Variables are identified by the variable name.The values stored in the variable can be used in
+                    further in
+                    our programs.
+                </p>
+                <h3>Variable declaration</h3>
+                <P>
+                    Variables can be declared by following way:<br>
+                    <code>
+                    &lt;Variablename&gt; = &lt;value&gt;
+                </code><br>
+                    For example:<br>
+                    <code>
+                    this_is_var = 24 
+                </code>
+                </P>
+
+            </section>
+            <section class="main-section" id="data_types">
+                <header>Data Types</header>
+                <p>
+                    The types of data that can be stored in variable is known as datatypes. Following are data types and
+                    its examples in python:
+                <ul>
+                    <li>
+                        <h3>Numeric</h3>
+                        <P>Numeric data types are simply integers or floating point numbers.<br>
+                            <code>int_var=12<br>float_var=0.231</code>
+                        </P>
+                    </li>
+                    <li>
+                        <h3>String</h3>
+                        <p>String are simply group of symbols and letters.And can be declared by using '' or "".<br>
+                            <code>str_var='this is the string'</code>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Boolean</h3>
+                        <p>Boolean value is simply true or false.It can also be known as 0 or 1.<br>
+                            <code>bool_var=True<br>
+                                false_var=False
+                            </code>
+                        </p>
+                    </li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="conditional">
+                <header>Conditional</header>
+                <p>
+                    Conditional statement is used to execute block of statements under a certain condition. If statement
+                    can be used as:<br>
+                    <code>if &lt;condition&gt;:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements
+                </code><br>
+                    For example:<br>
+                    <code>
+                    if a>b:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("a id greater than b")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("b id greater than a")
+                </code><br>
+                    If there is need of more than 1 condition then elif can be use repeatedly.<br>
+                    <code>
+                    if &lt;condition&gt;:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                    elif &lt;condition&gt;:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements
+                </code><br>
+                    For example:<br>
+                    <code>
+                    if a>b>c:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("a id greatest")<br>
+                    elif &lt;condition&gt;:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("b id greatest")<br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("c id greatest")
+                </code><br>
+                </p>
+            </section>
+            <section class="main-section" id="indentation">
+                <header>Indentation</header>
+                <p>
+                    Remember indentation in above code!!! Unlike other languages where indentation is used for
+                    readability, python uses it to determine block of code.<br>
+                    For example:<br>
+                    <code>
+                    if a>b:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("a id greater than b")
+                </code><br>
+                    If we remove the indentation python gives error. For example:<br>
+                    <code style="background-color: rgba(224, 70, 70, 0.705);">
+                    if a>b:<br>
+                    print("a id greater than b")
+                </code><br>
+                    A block of code can have any number of spaces starting from 1 space.
+                    A same block of code must have same number of spaces or tabs.Using different numbers of spaces or
+                    tabs in same block of code can result in error.
+                </p>
+            </section>
+            <section class="main-section" id="iteration">
+                <header>Iteration</header>
+                <p>
+                    Remember writing aphabets repeatedly in childhood, writing same thing for many times is gruesome,
+                    but programmer don't need to do that there is simple thing called iteration.
+                    Iteration means repeatation of code. We can iterate a block of code as much we need in a program by
+                    using iteration. There are two types of iteration in python:
+                <ul>
+                    <li><a href="#while_loop">While Loop</a></li>
+                    <li><a href="#for_loop">For Loop</a></li>
+                </ul>
+                </p>
+            </section>
+            <section class="main-section" id="while_loop">
+                <header>While Loop</header>
+                <p>
+                    While loop is a type of iteration in which a block of code is repeated untill certain condition is
+                    satisfied. For example:<br>
+                    <code>
+                    &lt;initialization&gt;
+                    while &lt;condition&gt;:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                </code><br>
+                    Before while loop some variable is initalized. Then the variable is used as the condition for while
+                    and the block of code is runned with the change in initalized variable. As the condition for while
+                    loop becomes false the loop is broken.<br>
+                    Here's the example of while loop:<br>
+                    <code>
+                    a = 0
+                    while a &lt; 10:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(a)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;a+=1
+                </code><br>
+                    Output for following code is:<br>
+                    <code>
+                    0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9
+                </code><br>
+                    If there is no proper change in initalized variable then the program might enter in infinite loop
+                    which may cause error in the program.
+                </p>
+            </section>
+            <section class="main-section" id="for_loop">
+                <header>For Loop</header>
+                <p>
+                    For loop is another type of iteration. Unlike while loop we don't have to initialize and change the value separately. In for loop initilization and change in value occours in itself.<br>
+                    <code>
+                        for &lt;initialization&gt; in range(&lt;start&gt;,&lt;end&gt;,&lt;steps&gt;):
+                        &nbsp;&nbsp;&nbsp;&nbsp; statements
+                    </code><br>
+                    As in above syntax the variable is initalized in for itself and runned in a range from start to end with certain steps. The start  and counter can be neglated if counting starts from 0 and counting step is 1 at every run.<br>
+                    Here's the example of for loop:<br>
+                    <code>
+                        for i in range(5):
+                        &nbsp;&nbsp;&nbsp;&nbsp;print("This is for loop")
+                    </code>
+                    In this code i is initialized as 0 for loop runs the block of code the increments value in i at every run of code when the value of code reaches value of 5 the for loop stops and exits loop.<br>
+                    Output of above code is:<br>
+                    <code>
+                        This is for loop<br>
+                        This is for loop<br>
+                        This is for loop<br>
+                        This is for loop<br>
+                        This is for loop
+                    </code><br>
+                    Stepping the loop in wrong way can end in infinite loop.
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
