@@ -10,14 +10,14 @@
 
 <body>
     <main id="main-doc">
-        <nav id="nav-bar">
-            <header>Python Documentation</header>
+        <nav id="navbar">
+            <header id="header">Python Documentation</header>
             <div id="link-div">
                 <ul id="links">
                     <li><a href="#introduction" class="nav-link">Introduction</a></li>
                     <li><a href="#Python_vs_other_language" class="nav-link">Python vs other language</a></li>
-                    <li><a href="#What_should_you_know" class="nav-link">What should you know!</a></li>
-                    <li><a href="#get_started" class="nav-link">Get Started With Python</a></li>
+                    <li><a href="#What_should_you_know!" class="nav-link">What should you know!</a></li>
+                    <li><a href="#get_started_with_python" class="nav-link">Get Started With Python</a></li>
                     <li><a href="#variables" class="nav-link">Variables</a></li>
                     <li><a href="#data_types" class="nav-link">Data Types</a></li>
                     <li><a href="#conditional" class="nav-link">Conditional</a></li>
@@ -67,7 +67,7 @@
                 </ul>
                 </p>
             </section>
-            <section class="main-section" id="What_should_you_know">
+            <section class="main-section" id="What_should_you_know!">
                 <header>What should you know!</header>
                 <p>
                     The must thing you should know for learning includes:
@@ -78,14 +78,15 @@
                 </ul>
                 </p>
             </section>
-            <section class="main-section" id="get_started">
+            <section class="main-section" id="get_started_with_python">
                 <header>Get Started With Python</header>
                 <p>
                     Trend of learning Language Starts from Hello World. Here's how can we write it:<br>
                     <code>
                     print("Hello World")
                 </code><br>
-                    This simple code can be copied and can be runned in python interpreter. Here print displays the ouput.
+                    This simple code can be copied and can be runned in python interpreter. Here print displays the
+                    ouput.
                     Output of above code is:<br>
                     <code>Hello World</code>
                 </p>
@@ -244,18 +245,22 @@
             <section class="main-section" id="for_loop">
                 <header>For Loop</header>
                 <p>
-                    For loop is another type of iteration. Unlike while loop we don't have to initialize and change the value separately. In for loop initilization and change in value occours in itself.<br>
+                    For loop is another type of iteration. Unlike while loop we don't have to initialize and change the
+                    value separately. In for loop initilization and change in value occours in itself.<br>
                     <code>
                         for &lt;initialization&gt; in range(&lt;start&gt;,&lt;end&gt;,&lt;steps&gt;):
                         &nbsp;&nbsp;&nbsp;&nbsp; statements
                     </code><br>
-                    As in above syntax the variable is initalized in for itself and runned in a range from start to end with certain steps. The start  and counter can be neglated if counting starts from 0 and counting step is 1 at every run.<br>
+                    As in above syntax the variable is initalized in for itself and runned in a range from start to end
+                    with certain steps. The start and counter can be neglated if counting starts from 0 and counting
+                    step is 1 at every run.<br>
                     Here's the example of for loop:<br>
                     <code>
                         for i in range(5):
                         &nbsp;&nbsp;&nbsp;&nbsp;print("This is for loop")
                     </code>
-                    In this code i is initialized as 0 for loop runs the block of code the increments value in i at every run of code when the value of code reaches value of 5 the for loop stops and exits loop.<br>
+                    In this code i is initialized as 0 for loop runs the block of code the increments value in i at
+                    every run of code when the value of code reaches value of 5 the for loop stops and exits loop.<br>
                     Output of above code is:<br>
                     <code>
                         This is for loop<br>
@@ -265,6 +270,65 @@
                         This is for loop
                     </code><br>
                     Stepping the loop in wrong way can end in infinite loop.
+                </p>
+            </section>
+            <section class="main-section" id="function">
+                <header>Function</header>
+                <p>
+                    Function is a block of code which runs when it is called. We cans pass datas in the fuction known as
+                    parameter. Function operates the parameter and gives result. Remember solving equations in high
+                    school, in programming we can simply define function and pass the equation and get the result in
+                    that way many problems can be solved easily.<br>
+                    We can define function by using <code style="margin: 0;">def</code> keyword in following way:<br>
+                    <code>
+                        def &lt;functionname&gt;(&lt;parameters&gt;):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;statements<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;return &lt;value&gt;<br>
+                    </code><br>
+                    Block of code in function is determined by indentation. At end of the block the <code
+                        style="margin:0;">return</code> keyword is used to return value from the function. The value is
+                    returned in the line of code where the function is called. If there is no need of return of value
+                    return can be omitted.<br>
+                    Here's the example function:<br>
+                    <code>
+                        def a_function():<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; print("This is a function")<br>
+                        <br>
+                        a_function()
+                    </code><br>
+                    In above example the function is initialized with name a_function and no parameter is needed to run
+                    the function. When function is called in line 4, the function runs the print statement and gives the
+                    Output.<br>
+                    Here's the output of above code:<br>
+                    <code>
+                        This is a function.
+                    </code><br>
+                    <em>
+                        Note:If function is called before defination then the program gives error.
+                    </em><br>
+                    Here's the example of function using parameter and return:<br>
+                    <code>
+                        def sum_function(a,b,c):<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; sum = a+b+c<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; return sum<br>
+                        <br>
+                        ans=sum_function(10,50,35)
+                        print(ans)
+                    </code><br>
+                    In above code when function is called with parameter passed as 10, 50 and 35 the value goes to
+                    function then the addition is done and value is stored in variable sum and the sum is returned in
+                    the line where it is called and gets stored in ans and the vlaue gets print using print.<br>
+                    Here's the output of the program:<br>
+                    <code>
+                        95
+                    </code>
+                    <h3>Importance of the function:</h3>
+                    <ul>
+                        <li>Helps in reuseability of code</li>
+                        <li>Helps in decreasing redundancy </li>
+                        <li>Helps in readability of code</li>
+                        <li>Helps in decrease in complexity of code</li>
+                    </ul>
                 </p>
             </section>
         </div>

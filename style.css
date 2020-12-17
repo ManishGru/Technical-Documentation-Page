@@ -2,14 +2,14 @@ body{
     margin:0;
     padding:0;
 }
-#nav-bar{
+#navbar{
     position:fixed;
     width:500px;
     height:100%;
     border-right:2px double black;
 
 }
-#nav-bar header{
+#navbar header{
     font-size:30px;
     font-weight: bolder;
     text-align: center;
@@ -67,4 +67,45 @@ body{
     padding:10px;
     border-radius:5px 5px 5px 5px ;
     margin:30px;
+}
+@media only screen and (max-width:768px){
+    #navbar{
+        position: static;
+        width: 100%;
+        height:30%;
+    }
+    #navbar header{
+        width:100%;
+        position:sticky;
+        top:0;
+        background:white;
+    }
+    #link-div{
+        position: static;
+        height:300px;
+        overflow-y: scroll;
+        border: 2px solid black;
+    }
+    #info{
+        position: static;
+    }
+    .main-section{
+        border-bottom: 2px solid black;
+        padding:20px
+    }
+    #introduction header{
+        margin-top:10px;
+    }
+    .main-section header{
+        text-align: center;
+        font-size:30px;
+        font-weight: bold;
+    }
+    .main-section code{
+        display:inline-block;
+        background:rgb(192, 192, 192);
+        padding:10px;
+        border-radius:5px 5px 5px 5px ;
+        margin:30px;
+    }
 }
